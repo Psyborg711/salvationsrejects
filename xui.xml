@@ -1,0 +1,295 @@
+<xui><!-- R.E. LXIX --> <!--\7 Days To Die\Config\xui.xml-->
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	
+		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="HUDLeftCenterMessageBars"/>
+		</window_group>
+		
+		<window_group name="character" controller="XUiC_CharacterSheetWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="CharacterFrameWindow"/>
+			<window name="buffInfoPanel"/>
+			<window name="PlayerStatsWindow" />
+			<window name="ActiveBuffsWindow" />
+		</window_group>		
+		
+		<window_group name="workstation_campfire" controller="XUiC_WorkstationWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_cementMixer" controller="XUiC_WorkstationWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+		
+		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+		</window_group>				
+
+		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowLooting"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="creative" controller="XUiC_CreativeWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowCreative" />
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Needed to disable input in new system -$#-->
+		<window_group name="backpack" actionSet="false">	
+			<window name="itemInfoPanel"/>
+			<window name="emptyInfoPanel" />
+			<window name="windowBackpack"/>
+		</window_group>
+		
+		<window_group name="dragAndDrop" actionSet="false">
+			<window name="dragAndDropItemStack" />
+		</window_group>
+		
+		<window_group name="compass" actionSet="false">
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) : pt 1 of 2 -->
+  <!-- On the below line select the compass you want to use - 7DTD Default = windowCompass - RELXIX HUD = windowCompassRELXIX -->
+			<window name="windowCompassRELXIX" />  <!-- windowCompassRELXIX (RELXIX HUD) or windowCompass (7DTD Default) - Displays the Compass and the Day and Time.-->
+<!-- If using the default compass you may want to delete the next line -->
+			<window name="mapStatsHUD" />  	<!-- Window that displays Air Temp, Wind Speed, Current Elevation - Delete this line to remove these items -->
+  <!-- On the below line select the Skill Points Available display you want - In the XP Bar = playerSkillPointsHUDBar - To the Right of the Belt = playerSkillPointsHUDRight  - Top Left of screen = playerSkillPointsHUDLeftTop -  OR DELETE the line to remove it -->
+			<window name="playerSkillPointsHUDBar" />  	<!-- Window that displays skillpoints available.  playerSkillPointsHUDBar, playerSkillPointsHUDRight, OR playerSkillPointsHUDLeftTop  Note: does not update real-time only on some GUI change events  - Delete this line to remove these items -->
+  <!-- Hack alert:  By putting the Skill Point window in the window_group toolbelt it will mostly/only update when pausing/hitting ESC.
+       By having the Skill Point window in the compass group it allows the window to update when going into the crafting menus, looting,
+       and many other commonly accessed GUI areas.  To avoid issues the toolbelt controller is used to hide it at the right times (example on the minibike) 
+  -->
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) : pt 1 of 2 -->
+		</window_group>
+		
+		<window_group name="toolTip" actionSet="false">
+			<window name="toolTip" />
+			<window name="popupMenu" />
+		</window_group>
+		
+		<window_group name="tipWindow">
+			<window name="windowTip" />
+		</window_group>
+		
+		<window_group name="questOffer">
+			<window name="windowQuestOffer" />
+		</window_group>
+		
+		<window_group name="timer">
+			<window name="windowTimer"/>
+		</window_group>
+		
+		<window_group name="toolbelt" actionSet="false">
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) : pt 2 of 2 -->
+			<window name="windowToolbeltNumbersHUD" />	<!-- Window that displays Numbers on the tool belt for each slot  - Delete this line to remove these items -->
+			<window name="playerXPHUD" />	<!-- Window that displays XP bar and level  - Delete this line to remove these items -->
+			<window name="playerStatsHUD" />	<!-- Window that displays Player Temp, Hunger % and Thirst %  - Delete this line to remove these items -->
+  <!-- On the below line select the Zombie Kill, PKill, Death display you want.  With static or dynamic colored icons. - ZKPKD = Zombie Kills, PKills, Deaths - ZKD = Zombie Kills, Deaths - IcoChng = dynamic colored icon -  OR DELETE the line to remove it -->
+			<window name="playerZKPKDIcoChngHUD" />	<!-- Window that displays Zombie Kills, PKills, Deaths or Zombie Kills, Deaths with dynamic or static colored icons.  playerZKPKDIcoChngHUD, playerZKDIcoChngHUD, playerZKPKDHUD, or playerZKDHUD - Delete this line to remove these items -->
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) : pt 2 of 2 -->
+			<window name="windowToolbelt" anchor="CenterBottom" />
+			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="HUDRightStatBars" anchor="RightBottom" />
+			<window name="windowQuestTracker" anchor="RightTop" />
+		</window_group>
+		
+		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowVehicle"/>
+			<window name="windowNonPagingHeader" />
+			<window name="windowVehicleStats" />
+			<window name="windowVehicleStorage" />
+		</window_group>
+		
+		<window_group name="windowpaging" actionSet="false">
+			<window name="windowPagingHeader" anchor="CenterTop"/>
+		</window_group>
+
+		<window_group name="map">
+			<window name="mapTrackingPopup" />			<!-- keep this on top -->			
+			<window name="mapAreaSetWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaChooseWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaEnterWaypointName" />	<!-- keep this on top -->
+			<window name="mapArea" />
+			<window name="mapTracking" />
+			<window name="mapInvites" />
+		</window_group>
+		
+		<window_group name="players">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="players" />
+		</window_group>
+		
+		<window_group name="assemble" controller="XUiC_AssembleWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowAssemble" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="radial" actionSet="keyboard">
+			<window name="windowRadial"/>
+		</window_group>
+		
+		<window_group name="skills" controller="XUiC_SkillWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowSkillList"/>
+			<window name="windowSkillInfo"/>
+			<!-- <window name="windowSkillStats"/> -->
+		</window_group>
+		<!--#$-IGS END-$#-->
+		
+		<window_group name="quests" controller="XUiC_QuestWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowQuestList" />
+			<window name="windowQuestDescription" />
+			<window name="windowQuestObjectives" />
+			<window name="windowQuestRewards" />
+		</window_group>
+		
+		<window_group name="journal" controller="XUiC_JournalWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
+		</window_group>
+		
+		<window_group name="profiles">
+			<window name="windowArchetypePreview"/>
+		</window_group>
+		
+		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
+			<window name="windowArchetypePreview2"/>
+			<window name="windowSliders"/>
+			<window name="windowColorPicker"/>
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Adding window to hold gampad callouts -$#-->
+		<window_group name="CalloutGroup"  actionSet="false">
+			<window name="GamepadCallouts" />
+		</window_group>
+		<!--*#$-IGS END.-$#-->
+
+		<window_group name="trader" controller="XUiC_TraderWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowTrader"/>
+			<window name="windowNonPagingHeader" />
+			<window name="serviceInfoPanel"/>
+		</window_group>
+		
+		<window_group name="sign">
+			<window name="windowSignEdit" />
+		</window_group>
+		
+		<window_group name="powersource" controller="XUiC_PowerSourceWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowPowerSourceStats" />
+			<window name="windowPowerSourceSlots" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powertrigger" controller="XUiC_PowerTriggerWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowPowerTriggerOptions" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerrangedtrap" controller="XUiC_PowerRangedTrapWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowPowerRangedTrapOptions" />
+			<window name="windowPowerTrapSlots" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+			
+		</window_group>
+		
+		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup" actionSet="controller">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowPowerCameraControl" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerspotlight" controller="XUiC_PoweredSpotlightWindowGroup">
+      <window name="mapTimeHUD"/>  	<!-- R.E. LXIX --> <!-- Window that displays Day/Time when compass not available - R.E. LXIX -  Red Eagle LXIX's Custom HUD : v0.20 : A16.3(b12) - Delete this line to remove these items -->
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="materials">
+			<window name="windowMaterials" />
+			<window name="windowMaterialInfo" />
+		</window_group>
+
+		<window_group name="spawnMenu">
+			<window name="spawnMenu" />
+		</window_group>
+		
+		<window_group name="ingameMenu">
+			<window name="ingameMenu" />
+		</window_group>
+		
+		<window_group name="woPropsSleeperVolume">
+			<window name="woPropsSleeperVolume" />
+		</window_group>
+		
+		<window_group name="editorPanelSelector">
+			<window name="editorPanelSelector" />
+		</window_group>
+		
+		<window_group name="ingameDebugMenu">
+			<window name="ingameDebugMenu" />
+		</window_group>
+		
+		<window_group name="levelTools">
+			<window name="levelTools" />
+		</window_group>
+		
+		<window_group name="prefabList">
+			<window name="prefabList" />
+		</window_group>
+		
+	</ruleset>
+</xui>
